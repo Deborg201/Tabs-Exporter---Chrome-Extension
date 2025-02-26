@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Tab URL Collector",
+  "version": "1.0",
+  "description": "Collects URLs from all open tabs and saves them to an Excel file.",
+  "permissions": [
+    "tabs",
+    "downloads"  
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
